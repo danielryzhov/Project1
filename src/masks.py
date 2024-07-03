@@ -10,6 +10,6 @@ def get_mask_card_number(card_number: str) -> str and None:
 def get_mask_account(account: str) -> str and None:
     """Функция принимает на вход номер счета и возвращает его маску"""
     if account.isdigit() and len(account) == 20:
-        return f"{'*' * 16}{account[16:]}"
+        return f"{'*' * 2}{account[16:]}"
     else:
         return None
