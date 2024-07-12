@@ -14,7 +14,7 @@ def filter_by_state(filter_state: Iterable, state="EXECUTED") -> None and Iterab
     return new_filter_state
 
 
-def sort_by_date(sort_state: list[dict[str, Any]], reverse=True) -> list[dict[str, Any]]:
+def sort_by_date(sort_state: list[dict[str, Any]], reverse=False) -> list[dict[str, Any]]:
     """Функция возвращает новый список отсортированный по дате"""
     sorted_state_date = sorted(sort_state, key=lambda sort_state: sort_state["date"], reverse=reverse)
     return sorted_state_date
