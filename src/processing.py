@@ -2,7 +2,7 @@ from typing import Iterable
 from typing import Any
 
 
-def filter_by_state(filter_state: Iterable, state="EXECUTED") -> None and Iterable:
+def filter_by_state(filter_state: Iterable, state="EXECUTED") -> Any and Iterable:
     """Функция принимает список словарей и возвращает новый список словарей содержащий только
     те словари, у которых ключ state соответствует указанному значению"""
     new_filter_state = []
